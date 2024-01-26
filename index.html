@@ -10,32 +10,40 @@
     <link rel="stylesheet" href="style.css">
     <title>Starbucks</title>
 </head>
+
 <body>
-    <div class="circulo"></div>
+    <div class="mae">
+        <div class="circulo"></div>
 
-    <img src="./assets/logo.png" alt="logo starbucks" class="logo">
+        <img src="./assets/logo.png" alt="logo starbucks" class="logo">
 
-    <div class="conteudo">
-        <div class="caixa-texto">
-            <h2> Não é apenas Café, é um <span>Starbucks</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum corrupti odit aperiam illum odio
-                voluptatum
-                ea
-                nisi iure vero. Neque tempore sequi nisi, enim vel omnis cumque delectus odit.</p>
+        <div class="conteudo">
+            <div class="caixa-texto">
+                <h2> Não é apenas Café, é um <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum corrupti odit aperiam illum odio
+                    voluptatum
+                    ea
+                    nisi iure vero. Neque tempore sequi nisi, enim vel omnis cumque delectus odit.</p>
 
-            <button>Deixe o seu LIKE</button>
+                <button>Deixe o seu LIKE</button>
+            </div>
+
+            <div class="caixa-imagem">
+                <img src="./assets/img1.png" alt="copa starbucks" class="starbucks">
+            </div>
         </div>
 
-        <div class="caixa-imagem">
-            <img src="./assets/img1.png" alt="copa starbucks" class="starbucks">
+        <div class="menu">
+            <img src="./assets/img-pequena1.png" class="copo-pequeno"
+                onclick="mudarImagem('./assets/img1.png'); mudarCor('#017143')">
+            <img src="./assets/img-pequena2.png" class="copo-pequeno"
+                onclick="mudarImagem('./assets/img2.png'); mudarCor('#eb7495')">
+            <img src="./assets/img-pequena3.png" class="copo-pequeno"
+                onclick="mudarImagem('./assets/img3.png'); mudarCor('#d752b1')">
         </div>
+
     </div>
 
-    <div class="menu">
-        <img src="./assets/img-pequena1.png" class="copo-pequeno" onclick="mudarImagem('./assets/img1.png'); mudarCor('#017143')">
-        <img src="./assets/img-pequena2.png" class="copo-pequeno" onclick="mudarImagem('./assets/img2.png'); mudarCor('#eb7495')">
-        <img src="./assets/img-pequena3.png" class="copo-pequeno" onclick="mudarImagem('./assets/img3.png'); mudarCor('#d752b1')">
-    </div>
 </body>
 
 <script src="./script.js"></script>

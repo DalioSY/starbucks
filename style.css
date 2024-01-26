@@ -4,11 +4,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
  }
+ /*div {border: 2px solid #000;}*/
  
- body {
-     padding-top: 20px; /* adiciona espaçamento */
-     padding-right: 100px;
-     padding-left: 100px;
+ .mae {
+    margin: 30px;
  }
  
  .conteudo {
@@ -16,17 +15,18 @@
      display: flex;
      justify-content: space-between; /* adiciona espaço entre os itens */
      align-items: center; /* alinha  tudo ao centro */
+     flex-wrap: wrap;
+     height: 390px;
  }
  
  .caixa-texto {
-     width: 600px;
+     width: 430px;
  }
  
  .caixa-imagem {
-     width: 600px;
+     width: 334px;
      display: flex;
      justify-content: flex-end; /* joga item todo pro lado */
-     margin-top: 250px;
  }
  
  .menu {
@@ -55,6 +55,8 @@
      font-size: 70px; /* muda tamanho do texto */
      font-weight: 900;  /* muda a grossura do texto */
      
+     
+     
  }
  
  p {
@@ -70,7 +72,6 @@
  
  .starbucks {
      width: 340px;
-      
  }
  
  .copo-pequeno {
@@ -90,52 +91,39 @@
      position: absolute;
      top: 0;
      left: 0;
-     clip-path: circle(600px at right 800px);
+     clip-path: circle(600px at right 100px);
      z-index: -1; /* define se o item está a frente ou atrás */
  }
 
  img {
-    max-width: 100%;
+    max-width: 315px;
     height: auto;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        padding: 20px; 
-    }
-
+@media only screen and (max-width: 960px) {
+    
     button {
-        background-color: white;
-        color: black;
+        background-color: black;
+        color: white;
     }
 
     .content {
         flex-direction: column;  
         text-align: center;
     }
-
-    .menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .text-box,
-    .img-box {
-        width: 100%;  
-    }
-
-    .img-box {
-        margin-top: 20px; 
-        justify-content: center;  
-    }
-
     h2 {
-        font-size: 40px;  
+        font-size: 25px;
+    }
+
+    p {
+        display: none;
+    }
+    .starbucks {
+        width: 160px;
     }
 
     span {
-        font-size: 50px;
+        font-size: 46px;
         color: black;  
     }
 }
