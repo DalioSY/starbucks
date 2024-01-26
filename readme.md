@@ -9,7 +9,7 @@
         <li>JavaScript</li>
 </ul>
 
-> https://daliosy.github.io/c/starbucks
+> https://daliosy.github.io/starbucks
 
 <h2>Habilidades recentes:</h2>
 
